@@ -1,4 +1,4 @@
-const Order = require("../models/order");
+import Order from "../models/order.js";
 
 // Create a new order
 const createOrder = async (req, res) => {
@@ -11,6 +11,4 @@ const createOrder = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: "Server error" });
   }
-};
-
-module.exports = { createOrder };
+};export { createOrder };

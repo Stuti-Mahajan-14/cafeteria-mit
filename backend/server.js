@@ -1,7 +1,11 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-const cors = require("cors");
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+import authRoutes from "./routes/authRoutes.js";
+import menuRoutes from "./routes/menuRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
+
 
 // Load environment variables
 dotenv.config();
@@ -20,9 +24,7 @@ mongoose
   .catch((err) => console.log(err));
 
 // Routes
-const authRoutes = require("./routes/authRoutes");
-const menuRoutes = require("./routes/menuRoutes");
-const orderRoutes = require("./routes/orderRoutes");
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api/menu", menuRoutes);

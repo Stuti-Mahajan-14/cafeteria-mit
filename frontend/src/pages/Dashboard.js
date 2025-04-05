@@ -37,10 +37,10 @@ const Dashboard = () => {
         {/* Cards for Admin */}
         {userRole === "admin" && (
           <>
-            <Card to="#">
-              📦 <h3>Manage Inventory</h3>
-              <p>Handle items in stock</p>
-            </Card>
+          <Card to="/ManageInventory">
+  📦        <h3>Manage Inventory</h3>
+            <p>Handle items in stock</p>
+          </Card> 
             <Card to="#">
               📝 <h3>View Orders</h3>
               <p>Monitor all orders</p>

@@ -1,4 +1,4 @@
-const MenuItem = require("../models/menuitem");
+import MenuItem from "../models/MenuCategory.js";
 
 // Get all menu items
 const getMenuItems = async (req, res) => {
@@ -10,4 +10,4 @@ const getMenuItems = async (req, res) => {
   }
 };
 
-module.exports = { getMenuItems };
+  export default getMenuItems;

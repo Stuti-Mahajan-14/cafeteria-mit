@@ -5,7 +5,7 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
-
+import ManageInventory from "./pages/ManageInventory"; // ✅ Add this import
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -29,7 +29,6 @@ function App() {
   };
 
   const handleCheckout = () => {
-    // Implement checkout logic
     console.log("Checkout completed!");
     setCartItems([]); // Clear the cart after checkout
   };
@@ -51,6 +50,10 @@ function App() {
             onRemoveItem={handleRemoveItem} 
             onCheckout={handleCheckout} 
           />} 
+        />
+        <Route 
+          path="/ManageInventory" 
+          element={<ManageInventory />} // ✅ Route added
         />
       </Routes>
     </Router>
