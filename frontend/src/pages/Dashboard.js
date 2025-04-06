@@ -23,11 +23,11 @@ const Dashboard = () => {
         {/* Cards for User */}
         {userRole === "user" && (
           <>
-            <Card to="#">
+            <Card to="/rfidbalance">
               💳 <h3>RFID Card Balance</h3>
               <p>Check your available balance</p>
             </Card>
-            <Card to="#">
+            <Card to="/orderhistory">
               📊 <h3>Order History</h3>
               <p>View past transactions</p>
             </Card>
@@ -41,11 +41,11 @@ const Dashboard = () => {
   📦        <h3>Manage Inventory</h3>
             <p>Handle items in stock</p>
           </Card> 
-            <Card to="#">
+            <Card to="/adminorders">
               📝 <h3>View Orders</h3>
               <p>Monitor all orders</p>
             </Card>
-            <Card to="#">
+            <Card to="/feedbackpage">
               💬 <h3>View Feedbacks</h3>
               <p>Check customer feedbacks</p>
             </Card>

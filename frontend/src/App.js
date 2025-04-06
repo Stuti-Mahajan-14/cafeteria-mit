@@ -6,6 +6,10 @@ import Dashboard from "./pages/Dashboard";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import ManageInventory from "./pages/ManageInventory"; // ✅ Add this import
+import RFIDBalance from "./pages/Rfidbalance";
+import OrderHistory from "./pages/Orderhistory";
+import AdminOrders from "./pages/Adminorders";
+import FeedbackPage from "./pages/Feedbackpage";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -55,6 +59,10 @@ function App() {
           path="/ManageInventory" 
           element={<ManageInventory />} // ✅ Route added
         />
+        <Route path="/rfidbalance" element={<RFIDBalance/>} />
+        <Route path="/orderhistory" element={<OrderHistory/>} />
+        <Route path="/adminorders" element={<AdminOrders/>} />
+        <Route path="/feedbackpage" element={<FeedbackPage/>} />
       </Routes>
     </Router>
   );
