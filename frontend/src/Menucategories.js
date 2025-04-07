@@ -7,7 +7,7 @@ const menuCategories = [
           id: 1, 
           name: "Tea", 
           price: 15, 
-          available: true,  // <-- Add this
+          available: true,  
           img: "/images/tea.jpeg",
           nutrition: {
             calories: 30,
@@ -19,7 +19,7 @@ const menuCategories = [
         },
         { 
           id: 2, 
-          name: "Coffee", 
+          name: "Coffee - 2", 
           price: 20, 
           img: "/images/coffee.jpg",
           nutrition: {
@@ -37,7 +37,7 @@ const menuCategories = [
       items: [
         { 
           id: 3, 
-          name: "Lassi", 
+          name: "Lassi - 3", 
           price: 30, 
           img: "/images/lassi.jpg",
           nutrition: {
@@ -50,9 +50,9 @@ const menuCategories = [
         },
         { 
           id: 4, 
-          name: "Koham Sharbat", 
+          name: "Koham Sharbat - 4", 
           price: 30, 
-          img: "/images/koham-sharbat.jpg",
+          img: "/images/kokam.jpg",
           nutrition: {
             calories: 120,
             carbs: "30g",
@@ -63,7 +63,7 @@ const menuCategories = [
         },
         { 
           id: 5, 
-          name: "1 Ltr. Water Bottle", 
+          name: "1 Ltr. Water Bottle - 5", 
           price: 20, 
           img: "/images/water.jpeg",
           nutrition: {
@@ -81,7 +81,7 @@ const menuCategories = [
       items: [
         { 
           id: 6, 
-          name: "Medu Vau", 
+          name: "Medu Vada - 6", 
           price: 35, 
           img: "/images/medu-vau.jpg",
           nutrition: {
@@ -94,7 +94,7 @@ const menuCategories = [
         },
         { 
           id: 7, 
-          name: "Samosa Masala", 
+          name: "Samosa Masala- 7", 
           price: 35, 
           img: "/images/samosa-masala.jpg",
           nutrition: {
@@ -161,7 +161,7 @@ const menuCategories = [
           id: 12, 
           name: "Dabeli (After 4:00 PM)", 
           price: 40, 
-          img: "/images/cherry-dabeli.jpg",
+          img: "/images/cherry-dabeli.jpeg",
           nutrition: {
             calories: 300,
             carbs: "45g",
